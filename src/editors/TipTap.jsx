@@ -194,6 +194,12 @@ export default function TipTap() {
       slotBefore={<MenuBar />}
       extensions={extensions}
       content={htmlData}
+      editorProps={{
+        attributes: {
+          class:
+            "prose prose-sm sm:prose lg:prose-lg xl:prose-2xl m-5 focus:outline-none",
+        },
+      }}
     ></EditorProvider>
   );
 }
